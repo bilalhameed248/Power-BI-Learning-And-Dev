@@ -1,0 +1,198 @@
+How to Load Data From Web:
+
+1) Go to your web browser
+2) Search your relevant dataset.
+3) Open Power BI and Nevigate to home getdata
+4) Click web
+5) Enter Url where dataset is avilable.
+6) Click OK
+
+
+Query Editer in Power BI
+
+1) Home-> Queries-> Transform Data
+2) Home->remove top rows
+3) Enter no of rows
+
+Rename Column
+1) Double Click the column name edit and rename.
+
+Convert Column Into Rows
+
+1) Press Ctrl + Shift and select the column.
+2) Click Transform ->  Click Unpivot Columns
+
+Power Bi Services
+
+1) Home->
+
+
+Power Bi Dashboard
+
+1) 
+
+Data Category
+
+1) Select Column
+2) Go to Column Tool
+3) Select Category from Data Category
+
+Create Visualization
+
+1) Click Report Tab which is up from Data tab
+2)Select Visualization icon from right side menu
+3) drag and drop from  fields tab to visualization axis
+4) it will create your graph auyomatically
+
+Apply FIlter to Data
+
+1) In the FIlter Tab Select top N
+2) Enter Vlaue for top N
+3) Drag and drop field value into value tab
+
+Redesign Graph
+
+1) To change Formating of Graph Select Formate Tab in Visualization
+2) Select Your Desire Change e.g Data labe on
+
+
+3 MOST IMPORTENT SETTING IN POWER BI
+
+1) Go To File And Select Setting and Options
+2) Select Option
+3) Uncheckd Auto Detection column
+2) Unchecked Auto Detect New Relationship
+3) Unchecked Background Data
+
+
+How to Remove N/A Value
+
+1) Click Cloumn Containing N/A value
+scroll down to bottom and search N/A Value 
+2) Uncheck and Press Ok Button
+
+How to Marge Multiple File in Single File
+
+1) Home->Transform Data-> Transform Data
+2) Home-> Select Append Query Dropdown from right most corner
+3) Select Append Query as new
+
+Delete unwanted columns in power bi
+
+1) Home->Transform Data-> Transform Data
+2) Select column -> Home -> Remove column 
+
+Text to column or split column 
+
+1) Home->Transform Data-> Transform Data
+2) transform Split column
+
+
+Reference option
+
+1) Home->Transform Data-> Transform Data
+2) Home-> Manage->  Referance
+
+Remove Duplocate Rows
+
+1) Home->Transform Data-> Transform Data
+2) Select Column -> Right Click-> Remove Duplicate Rows
+
+Edit Data In Power BI
+
+1) Home->Transform Data-> Transform Data
+2) Home->Enter Data-> Enter File/Query name and press save.
+3) Copy Data from Excle sheet
+4) Select Query and On very right side select gear icon in source
+5) Select Column and paste your data
+6) Press save
+7) select index and press gear icon in source
+8) Edit data and press save
+
+
+Relationships
+
+1) Load Data
+2) Go to Modal Tab and create Relationship
+
+Dax
+
+1) Table tool
+2) Add Column
+3) Write column name in place of Column
+4) Write formula  e.g [Country]&"-"&[Year]
+5) OR
+6) CONCATENATE([Country], CONCATENATE("-",[Year]))
+
+DAX FORMULA https://docs.microsoft.com/en-us/dax/
+
+
+Populate Data From Different Workbook
+
+1) FIrst Make a relationship between two files/table
+1) Add new column
+2) create Formula of RELATED it will automatically populate column from respective table/file/worksheet
+Formula:   = RELATED(Revenue[Item B])
+Formula:   = RELATED(Revenue[Item A])+= RELATED(Revenue[Item B])
+
+Measure Vs DAX
+
+DAX perform operation on rows(sum two column rows and make 3rd new column) and measure perform operation on colum e.g sum of total value in colum
+
+Formula: = SUM(Cost[Revenue A])
+
+SPLIT FORMULA
+
+1) Home->Transform Data-> Transform Data
+2) Transform -> Text Column -> Split Column
+
+first and last = LEFT([Email address],FIND("@",[Email address])-1)
+
+Email After @ = RIGHT([Email address],LEN([Email address])-FIND("@",[Email address]))
+
+
+Edit Intrection
+
+1) First create two visualization
+2) Formate -> Edit Intrection
+
+Conditional Formating
+
+1) First create visualization
+2) Select Visualization
+3) Select formate Near Field
+4) Select Data Color
+5) Default color or Fx
+
+
+
+Data Drill Down
+
+1) Home-> Visualization-> Field 
+2) Select any data and open it
+3) Right click on any column / field name
+4) Create Hierarchy
+5) Drag any field and drop in hierarchy
+
+How to display % with number in bar chart graph
+
+1) select Line and Sketch Column Chart
+2) Insert (same solumn value) in line Values and Column Values 
+3) Insert (same solumn value) in Share axis and Column series
+4) Select Line Vlae Colum dropdown -> show values as->percentage
+
+
+On Hover Display ANother Graph
+
+1) Creat new Sheet by Clicking + Button bellow
+2) On Tooltip from Formate Option
+3) Create New Graph
+4) Come Back to Previous Chart
+5) select Chart and open tooltip from formate
+6) Select Page From page Tab
+
+Power Bi Services
+
+1) Login-> Get Data -> Upload File->
+2) Select dataset-> Build Report From Scratches->
+3) Save Report-> 3 Dot Near Edit-> Pin to Dashboard->
